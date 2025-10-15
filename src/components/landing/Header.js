@@ -32,7 +32,7 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/landing" className="flex items-center gap-2">
             <Logo />
             <span className="text-xl font-bold text-gray-800 dark:text-white">Kontrolly</span>
           </Link>
