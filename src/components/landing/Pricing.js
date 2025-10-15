@@ -8,10 +8,10 @@ const plan = {
   name: "Plano Vitalício",
   price: "R$ 199",
   isMostPopular: true,
-  description: "Acesso completo e ilimitado a todos os recursos da plataforma, para sempre. Pague uma vez e transforme a gestão das suas obras.",
+  description: "Acesso completo e ilimitado a todos os recursos da plataforma, para sempre. Pague uma vez e transforme a gestão do seu negocio",
   features: [
     "Usuários ilimitados",
-    "Perfis de Obra ilimitados",
+    "Perfis ilimitados",
     "Lançamentos ilimitados via WhatsApp",
     "Análise inteligente (IA) de comprovantes",
     "Dashboard avançado com filtros e metas",
@@ -24,7 +24,7 @@ const plan = {
 };
 
 const faqs = [
-    { question: "Preciso de um aplicativo para usar o sistema?", answer: "Não! A grande vantagem do Obra.AI é que toda a interação da sua equipe de campo é feita diretamente pelo WhatsApp, um aplicativo que todos já usam. O gestor acessa o dashboard completo pelo navegador de qualquer dispositivo." },
+    { question: "Preciso de um aplicativo para usar o sistema?", answer: "Não! A grande vantagem do Kontrolly é que toda a interação da sua equipe de campo é feita diretamente pelo WhatsApp, um aplicativo que todos já usam. O gestor acessa o dashboard completo pelo navegador de qualquer dispositivo." },
     { question: "Como funciona o pagamento?", answer: "O pagamento é único, realizado de forma segura através da Hotmart. Você paga apenas uma vez e tem acesso vitalício a todos os recursos e futuras atualizações do sistema, sem mensalidades ou taxas escondidas." },
     { question: "A IA entende qualquer tipo de áudio ou comprovante?", answer: "Nossa IA é treinada para entender português brasileiro com diferentes sotaques e para reconhecer os formatos mais comuns de notas fiscais e comprovantes. A precisão é altíssima, mas caso algo não seja identificado, o sistema notifica para uma revisão manual rápida." },
     { question: "Meus dados estão seguros?", answer: "Sim. Levamos a segurança muito a sério. Seus dados são criptografados e armazenados em servidores seguros, seguindo as melhores práticas de mercado." }
