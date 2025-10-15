@@ -14,7 +14,6 @@ import {
   DialogDescription,
   DialogFooter,
 } from "@/components/ui/dialog";
-import { useToast } from "@/components/ui/use-toast"; // Verifique se este é o caminho correto no seu projeto
 
 // Definição do plano de pagamento único
 const plan = {
@@ -47,17 +46,18 @@ const faqs = [
 // Componente principal da seção de preços
 export function Pricing() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const { toast } = useToast();
+  const [copyButtonText, setCopyButtonText] = useState("Copiar Número");
   const phoneNumber = "+55 11 95472-8628";
-  const rawPhoneNumber = "5511954728628"; // Versão sem formatação para copiar e usar em links
+  const rawPhoneNumber = "5511954728628"; // Versão sem formatação para copiar
 
   // Função para copiar o número para a área de transferência
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(rawPhoneNumber);
-    toast({
-      title: "Sucesso!",
-      description: "Número copiado para a área de transferência.",
-    });
+    setCopyButtonText("Copiado!");
+    // Reseta o texto do botão após 2 segundos
+    setTimeout(() => {
+      setCopyButtonText("Copiar Número");
+    }, 2000);
   };
 
   return (
@@ -147,7 +147,7 @@ export function Pricing() {
                 </div>
                 <Button variant="outline" onClick={handleCopyToClipboard}>
                     <Copy className="mr-2 h-4 w-4" />
-                    Copiar Número
+                    {copyButtonText}
                 </Button>
             </div>
           </div>
